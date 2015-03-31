@@ -10,7 +10,7 @@
 #define OBD_MODEL_UART 0
 #define OBD_MODEL_I2C 1
 
-#define OBD_TIMEOUT_SHORT 20000 /* ms */
+#define OBD_TIMEOUT_SHORT 2000 /* ms */
 #define OBD_TIMEOUT_LONG 7000 /* ms */
 #define OBD_SERIAL_BAUDRATE 38400
 #define OBD_RECV_BUF_SIZE 128
@@ -19,7 +19,7 @@
 #if defined(__AVR_ATmega328P__) || defined(__AVR_ATmega168P__)
 #define OBDUART Serial
 #else
-#define OBDUART Serial//1
+#define OBDUART Serial1
 #endif
 #endif
 
